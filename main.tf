@@ -43,7 +43,7 @@
     subnet_id = aws_subnet.privatesubnets.id
     route_table_id = aws_route_table.PrivateRT.id
  }
- #resource "aws_eip" "nateIP" {
+ resource "aws_eip" "nateIP" {
    vpc   = true
  }
  #Creating the NAT Gateway using subnet_id and allocation_id
