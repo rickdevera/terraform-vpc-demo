@@ -1,7 +1,7 @@
 resource "aws_security_group" "demo-security-group" {
   name        = "Demo Security Group"
   description = "Enable HTTP/HTTPS access on Port 80/443"
-  vpc_id      = aws_vpc.vpc.id
+  vpc_id      = aws_vpc.Main.id
 
   ingress {
     description      = "HTTP Access"
